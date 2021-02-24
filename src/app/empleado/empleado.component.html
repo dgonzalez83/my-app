@@ -1,0 +1,13 @@
+<h3>Empleado: </h3>
+<p>Name: {{ name + ' ' + lastname }}</p>
+<p>Age: {{ age }} ({{ age >= 18 ? 'es mayor de edad' : 'es menor de edad' }})</p>
+<p>Empresa: {{ business.value }}</p>
+<p>Cargo: {{ role.value }}</p>
+
+<p>Introduce empresa: <input #business type="text" placeholder="Titanium Aero"/></p>
+<p>Introduce cargo: <input #role type="text" placeholder="developer" (keyup)="0" /></p>
+
+<br>
+
+<button (click)="clickHandler(business.value)">Click!</button>
+
