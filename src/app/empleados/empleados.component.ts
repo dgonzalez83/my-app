@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpleadosComponent implements OnInit {
 
+  propDisabled = false
+
+  propChecked = false
+
   constructor() { }
 
   ngOnInit(): void {

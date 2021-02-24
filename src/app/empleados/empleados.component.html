@@ -2,4 +2,23 @@
 
 <app-empleado></app-empleado>
 <app-empleado></app-empleado>
-<app-empleado></app-empleado>
+
+<hr />
+
+<h3>Property Binding</h3>
+
+<p>
+  Input text:
+  <input
+    #role
+    type="text"
+    placeholder="input text"
+    (keyup)="(0)"
+    [disabled]="propDisabled"
+  />
+</p>
+
+<button (click)="propDisabled = !propDisabled">Enabled/Disabled!</button>
+<p>
+  Checkbox:<input type="checkbox" name="input-text" id="input-text" [(checked)]="propChecked" /> {{ propChecked === true ? 'Checked!' : 'Uncheked!'}}
+</p>
