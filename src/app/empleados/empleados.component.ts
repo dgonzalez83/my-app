@@ -9,8 +9,6 @@ export class EmpleadosComponent implements OnInit {
 
   propDisabled = false
 
-  propChecked = false
-
   constructor() { }
 
   ngOnInit(): void {

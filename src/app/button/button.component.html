@@ -1,0 +1,12 @@
+<h3>Event binding</h3>
+
+<p>button works!</p>
+
+<button (click)="clickHandler()">Push me!</button>
+
+<div>
+    Registrado: <input type="radio" value="true" name="radio-1" id="1" (click)="handleRadio($event)">
+    No registrado: <input type="radio" value="false" name="radio-1" id="0" (click)="handleRadio($event)">
+    <br>
+    {{ radioSelect }}
+</div>
